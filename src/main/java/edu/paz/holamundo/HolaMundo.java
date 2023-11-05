@@ -11,6 +11,10 @@ package edu.paz.holamundo;
 public class HolaMundo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        EntradaTeclado introducir=new EntradaTeclado();
+        String respuesta;
+        String pregunta = "Introduce texto";
+        respuesta=introducir.introduceTeclado(pregunta);
+        System.out.println("La respuesta es " + respuesta);
     }
 }
